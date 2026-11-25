@@ -1,0 +1,186 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "Five congruent copies of a non-rectangular polyomino do not tile a rectangle, with the three-copy theorem"
+  description: "Lean 4 + Mathlib formalization of 7 statements on tilings of a rectangle by congruent copies of one polyomino (rotations and reflections allowed): a crossing statement, two statements on tiles that hold two corner cells, the three-copy theorem (printed prior work, proved here a second time), a statement that reduces 3 and 5 copies at a given number of cells to a finite search, the statement that case (I) of five copies does not occur (Theorem A18), and Corollary A19. Corollary A19 is proved in Lean: no rectangle is tiled by exactly five congruent copies of a polyomino that is not a rectangle. Proved in Lean with standard axioms only: 7 of 7 statements, all witnessed. AI research agents built and directed by Tyler B. Hughes generated and checked this work. No human mathematician has yet refereed the proof."
+  authors:
+    - "Tyler B. Hughes"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Tyler B. Hughes"
+
+classification:
+  arxiv: ["math.CO"]
+  msc2020: ["05B50", "05B45", "52C20"]
+
+sources:
+  - title: "No Rectangle Is Tiled by Five Congruent Copies of a Non-Rectangular Polyomino"
+    authors:
+      - "Tyler B. Hughes"
+    id: "https://mathdiscoveries.org/results/polyomino-odd-order"
+    type: original-proof
+    location: "https://mathdiscoveries.org/results/polyomino-odd-order"
+    relationship: other
+    author_endorsement: participated
+    note: >-
+      The proofs formalized here. Theorem 62 (three copies) is printed prior
+      work and is listed below; the proof of it here is a second proof.
+      Computer search results of the companion work (its C5-T statements) are
+      external to this package: no search is run or checked in Lean. AI research
+      agents built and directed by Tyler B. Hughes generated and checked this
+      work. No human mathematician has yet refereed the proof.
+  - title: "Polyominoes of order 3 do not exist"
+    authors:
+      - "I. N. Stewart"
+      - "A. Wormstein"
+    id: "https://doi.org/10.1016/0097-3165(92)90058-3"
+    type: paper
+    location: "Journal of Combinatorial Theory, Series A 61 (1992), 130-136"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      Read in full. Its Theorem: if three congruent copies of a connected
+      polyomino tile a rectangle, then the polyomino is itself rectangular
+      (reflections allowed). This contains the statement of Theorem 62. It calls
+      the existence of odd orders greater than one an open question.
+  - title: "Trisecting a rectangle"
+    authors:
+      - "S. J. Maltby"
+    type: paper
+    location: "Journal of Combinatorial Theory, Series A 66 (1994)"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      Read in full by an earlier agent unit of this work. It generalises the
+      three-copy result to all trisections of a rectangle; Theorem 62 is its
+      polyomino case.
+  - title: "Some Open Problems in Polyomino Tilings"
+    authors:
+      - "Andrew Winslow"
+    id: "https://doi.org/10.1007/978-3-319-98654-8_6"
+    type: paper
+    location: "Lecture Notes in Computer Science (2018), 74-82"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      In Developments in Language Theory (DLT 2018). Read in full in the
+      author's copy, where the question is Open Problem 11: "Is there a
+      polyomino of order 5?". Corollary A19 of this package answers it; the
+      notion of order is not defined in the package. The Springer version of
+      record is unread [to check].
+  - title: "Tiling Rectangles and Half Strips with Congruent Polyominoes"
+    authors:
+      - "Michael Reid"
+    id: "https://doi.org/10.1006/jcta.1997.2788"
+    type: paper
+    location: "Journal of Combinatorial Theory, Series A 80 (1997), 106-123"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      On rectangles tiled by an odd number of copies of a polyomino. Read in
+      full in the author's preprint, not in the version of record.
+  - title: "Intensive use of computing resources for dominations in grids and other combinatorial problems"
+    authors:
+      - "Alexandre Talon"
+    id: "https://arxiv.org/abs/2002.11615"
+    type: thesis
+    location: "arXiv:2002.11615 (2020)"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      Chapter 4 read. Page 96 says it is not known whether there are polyominoes
+      of order 5.
+
+related_formalizations: []
+
+status:
+  scope: >-
+    Proved in Lean 4 + Mathlib with standard axioms only: 7 of 7 statements, all witnessed
+    (compared statements; witnessed means that their hypotheses are shown to
+    be satisfiable in PolyominoOddOrder/Sanity.lean). Corollary A19 is proved in Lean: no rectangle is tiled by exactly five congruent copies of a polyomino that is not a rectangle. The internal
+    theorems corners_in_distinct_tiles, sides_are_intervals,
+    corner_tile_sides and free_tile_one_side (Corollary 63, Proposition 57 (a)
+    and (b), Corollary 59 with Proposition 60 of the companion work) are steps
+    of its proof, not compared statements, and are not counted. Theorem 21
+    takes a search without hits at a given number of cells as a hypothesis;
+    C5-T search results are external to this package and are neither run nor
+    checked in Lean.
+    sorry_count does not count the sorry bodies of the statements in
+    Challenge.lean, which Solution.lean proves.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Quot.sound", "Classical.choice"]
+
+automation:
+  methods:
+    - method: agent
+      models: []
+      framework: "AI research agents built and directed by Tyler B. Hughes"
+      tool_setup: "AI research agents wrote the statements, the proofs and the Lean 4 + Mathlib formalization, and separate agents checked the statements against the source text."
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "local machine"
+      prompting_notes: "Statement-first formalization of written proofs."
+  spend_usd: "not tracked"
+  notes: "AI research agents built and directed by Tyler B. Hughes generated and checked this work. No human mathematician has yet refereed the proof."
+
+fidelity:
+  divergences: >-
+    Lemma 3 is stated for the bottom side. Corollary A19 is stated as its
+    sentence before the parentheses, which give its derivation. Theorem A18 is
+    stated with the tiling and the corner condition inside the negation, as in
+    the source. A rectangle is R a b, with lower-left cell (0, 0).
+
+review:
+  status: agent-reviewed
+  reviewers:
+    - "AI review agents directed by Tyler B. Hughes"
+  notes: >-
+    A separate agent of another model family rendered the statements back into
+    words from the Lean text alone, and the renderings were compared with the
+    source text (7 of 7 exact). Axioms are printed by
+    PolyominoOddOrder/Verify.lean. Independent kernel verification is left to
+    Palomar's report. No human mathematician has yet refereed the proof.
+
+alignment:
+  namespace: "PolyominoOddOrder"
+  statements:
+    - source: "Corollary 1a (crossing)"
+      lean: "PolyominoOddOrder.corollary1a_crossing"
+      module: "Solution"
+      status: proved
+      note: "Let a, b >= 2. If S is a connected subset of R meeting both the left and the right column, and S' is a connected subset of R meeting both the bottom and the top row, then S and S' share a cell."
+    - source: "Lemma 2 (no tile holds two opposite corners)"
+      lean: "PolyominoOddOrder.lemma2_no_opposite_corners"
+      module: "Solution"
+      status: proved
+      note: "No tile contains two opposite corner cells of R. (Setting: P is a polyomino, k >= 2, and T_1, ..., T_k is a k-copy tiling of R(a, b) by P.)"
+    - source: "Lemma 3 (two adjacent corners force the whole side)"
+      lean: "PolyominoOddOrder.lemma3_adjacent_corners_full_row"
+      module: "Solution"
+      status: proved
+      note: "Suppose a tile T contains the two corner cells (0, 0) and (a - 1, 0). Then T contains every cell of row 0. (Setting: P is a polyomino, k >= 2, and T_1, ..., T_k is a k-copy tiling of R(a, b) by P.)"
+    - source: "Theorem 62 (three copies)"
+      lean: "PolyominoOddOrder.theorem62_no_three_copy_tiling"
+      module: "Solution"
+      status: proved
+      note: "No rectangle is tiled by exactly three congruent non-rectangular polyominoes (grid isometries, reflections included). Printed prior work (Maltby 1994; Stewart and Wormstein 1992); the proof here is a second proof."
+    - source: "Theorem 21 (what a search without hits proves)"
+      lean: "PolyominoOddOrder.theorem21_search_bridge"
+      module: "Solution"
+      status: proved
+      note: "Fix n. Suppose that, over all rectangles and boxes allowed in section 1, no tuple of I(5), H1(5), H2(5), H1(3), H2(3) has a proper solution that is not a rectangle. Then no rectangle is tiled by exactly 3, and none by exactly 5, congruent copies of a non-rectangular polyomino with n cells. The search without hits is a hypothesis; no search is run or checked in Lean."
+    - source: "Theorem A18 (case (I) does not occur)"
+      lean: "PolyominoOddOrder.theoremA18_no_case_one_tiling"
+      module: "Solution"
+      status: proved
+      note: "Let P be a polyomino that is not a rectangle. There is no 5-copy tiling T_1, ..., T_5 of a rectangle R(a, b) by P in which the four corner cells of R lie in four distinct tiles. Case (I) of five copies; with the internal theorem corners_in_distinct_tiles it gives Corollary A19."
+    - source: "Corollary A19 (five copies)"
+      lean: "PolyominoOddOrder.corollaryA19_no_five_copy_tiling"
+      module: "Solution"
+      status: proved
+      note: "No rectangle is tiled by exactly five congruent copies of a non-rectangular polyomino. The words in parentheses in the source are its derivation and are not part of the statement."
+
+acknowledgements: "Built on Lean 4 and Mathlib."

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+type: software
+message: "If you use or cite this Lean 4 formalization, please cite it using the metadata below."
+title: "Five congruent copies of a non-rectangular polyomino do not tile a rectangle, with the three-copy theorem"
+authors:
+  - family-names: "Hughes"
+    given-names: "Tyler B."
+    orcid: "https://orcid.org/0000-0001-6221-9014"
+version: "v1.0.0"
+date-released: "2026-11-25"
+license: "Apache-2.0"
+repository-code: "https://github.com/mathdiscoveries/polyomino-odd-order"
+url: "https://mathdiscoveries.org/results/polyomino-odd-order"

@@ -1,0 +1,19 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "PolyominoOddOrder.corollary1a_crossing",
+    "PolyominoOddOrder.lemma2_no_opposite_corners",
+    "PolyominoOddOrder.lemma3_adjacent_corners_full_row",
+    "PolyominoOddOrder.theorem62_no_three_copy_tiling",
+    "PolyominoOddOrder.theorem21_search_bridge",
+    "PolyominoOddOrder.theoremA18_no_case_one_tiling",
+    "PolyominoOddOrder.corollaryA19_no_five_copy_tiling"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}
