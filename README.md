@@ -73,9 +73,10 @@ Comments that name `Spec.lean` mean `Challenge.lean`. Comments that name `BLUEPR
   the case of five pieces "was resolved negatively in a paper" and links to L. Yuan, C. T. Zamfirescu
   and T. I. Zamfirescu, "Dissecting the square into five congruent parts", Discrete Math. 339 (2016),
   unread `[to check]`. H. Rao, L. Ren and Y. Wang, "Dissecting a square into congruent polygons",
-  Discrete Math. Theor. Comput. Sci. 22 (2020), and G. L. Maldonado and E. Roldán-Pensado,
-  "Dissecting the square into seven or nine congruent parts", Discrete Math. (2022), pages 1 and 2
-  of their arXiv versions read, report that it proves, for five tiles, that a square tiled by
+  Discrete Math. Theor. Comput. Sci. 22 (2020) (arXiv version 3 read), and G. L. Maldonado and
+  E. Roldán-Pensado, "Dissecting the square into seven or nine congruent parts", Discrete Math.
+  (2022) (arXiv version 4 read; published version `[to check]`), report that it proves, for five
+  tiles, that a square tiled by
   congruent copies of a convex polygon is tiled by rectangles. Maldonado and Roldán-Pensado report
   that a conjecture attributed to Danzer, for five congruent polygons that need not be convex,
   remains open. A polyomino that is not a rectangle is not convex, so these results do not cover

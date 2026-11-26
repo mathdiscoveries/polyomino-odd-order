@@ -127,7 +127,7 @@ sources:
     relationship: background
     author_endorsement: not-contacted
     note: >-
-      Pages 1 and 2 of the arXiv version (2001.03289 v3) read. A square cut into
+      The arXiv version (2001.03289 v3) read. A square cut into
       an odd number of congruent convex polygons; it reports that Yuan,
       Zamfirescu and Zamfirescu (2016) prove that for five tiles the convex
       polygon is a rectangle, and proves the same for convex q-gons with q >= 6
@@ -143,7 +143,8 @@ sources:
     relationship: background
     author_endorsement: not-contacted
     note: >-
-      Pages 1 and 2 of the arXiv version (2104.04940 v4) read. It reports that
+      The arXiv version (2104.04940 v4) read; the published version [to check].
+      It reports that
       Yuan, Zamfirescu and Zamfirescu verified the convex case for five tiles,
       and that a conjecture attributed to Danzer, for five congruent polygons
       that need not be convex, remains open. A polyomino that is not a rectangle
