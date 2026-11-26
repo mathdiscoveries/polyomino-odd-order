@@ -19,12 +19,12 @@ sources:
     authors:
       - "Tyler B. Hughes"
     id: "https://mathdiscoveries.org/results/polyomino-odd-order"
-    type: original-proof
+    type: paper
     location: "https://mathdiscoveries.org/results/polyomino-odd-order"
-    relationship: other
+    relationship: formalizes
     author_endorsement: participated
     note: >-
-      The proofs formalized here. Theorem 62 (three copies) is printed prior
+      The companion paper. It states and proves in writing every compared statement of this package, and the Lean work formalizes them; the formalization presents no result that the paper does not. Theorem 62 (three copies) is printed prior
       work and is listed below; the proof of it here is a second proof.
       Computer search results of the companion work (its C5-T statements) are
       external to this package: no search is run or checked in Lean. AI research
@@ -37,24 +37,25 @@ sources:
     id: "https://doi.org/10.1016/0097-3165(92)90058-3"
     type: paper
     location: "Journal of Combinatorial Theory, Series A 61 (1992), 130-136"
-    relationship: background
+    relationship: independently-proves
     author_endorsement: not-contacted
     note: >-
       Read in full. Its Theorem: if three congruent copies of a connected
       polyomino tile a rectangle, then the polyomino is itself rectangular
       (reflections allowed). This contains the statement of Theorem 62. It calls
-      the existence of odd orders greater than one an open question.
+      the existence of odd orders greater than one an open question. Theorem
+      62 is proved here independently.
   - title: "Trisecting a rectangle"
     authors:
       - "S. J. Maltby"
     type: paper
     location: "Journal of Combinatorial Theory, Series A 66 (1994)"
-    relationship: background
+    relationship: independently-proves
     author_endorsement: not-contacted
     note: >-
       Read in full by an earlier agent unit of this work. It generalises the
       three-copy result to all trisections of a rectangle; Theorem 62 is its
-      polyomino case.
+      polyomino case, proved here independently.
   - title: "Some Open Problems in Polyomino Tilings"
     authors:
       - "Andrew Winslow"
