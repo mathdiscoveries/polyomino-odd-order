@@ -7,7 +7,7 @@ authors:
     given-names: "Tyler B."
     orcid: "https://orcid.org/0000-0001-6221-9014"
 version: "v1.0.0"
-date-released: "2026-11-25"
+date-released: "2026-11-26"
 license: "Apache-2.0"
 repository-code: "https://github.com/mathdiscoveries/polyomino-odd-order"
 url: "https://mathdiscoveries.org/results/polyomino-odd-order"

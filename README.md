@@ -60,10 +60,32 @@ Comments that name `Spec.lean` mean `Challenge.lean`. Comments that name `BLUEPR
   number of copies.
 - A. Talon, thesis, arXiv:2002.11615, chapter 4 read: page 96 says it is not known whether
   there are polyominoes of order 5.
+- An exhaustive computer search in the repository
+  [fransys-code/polyomino-odd-rectangles](https://github.com/fransys-code/polyomino-odd-rectangles)
+  (2026-11-22), README read: no non-rectangular polyomino with at most 24 cells tiles a
+  rectangle with exactly 5, 7 or 9 copies (its French summary says that size 24 is still
+  running). It calls the general question open and says the search has not been checked by a
+  third party.
+- A comment by "Zomulgustar" on MathOverflow question 11753 (2016-04-27), read in full: an
+  exhaustive search of the non-rectangular polyominoes with at most 13 cells found no rectangle
+  tiled by 5, 7 or 9 copies, with "a few 13-ominos left".
+- Squares cut into five congruent pieces. A 2022 comment in the same MathOverflow thread says that
+  the case of five pieces "was resolved negatively in a paper" and links to L. Yuan, C. T. Zamfirescu
+  and T. I. Zamfirescu, "Dissecting the square into five congruent parts", Discrete Math. 339 (2016),
+  unread `[to check]`. H. Rao, L. Ren and Y. Wang, "Dissecting a square into congruent polygons",
+  Discrete Math. Theor. Comput. Sci. 22 (2020), and G. L. Maldonado and E. Roldán-Pensado,
+  "Dissecting the square into seven or nine congruent parts", Discrete Math. (2022), pages 1 and 2
+  of their arXiv versions read, report that it proves, for five tiles, that a square tiled by
+  congruent copies of a convex polygon is tiled by rectangles. Maldonado and Roldán-Pensado report
+  that a conjecture attributed to Danzer, for five congruent polygons that need not be convex,
+  remains open. A polyomino that is not a rectangle is not convex, so these results do not cover
+  Corollary A19.
 
-The other statements were not found in the searches logged on 2026-11-25 (arXiv, OEIS, CORE, zbMATH Open,
-Google Scholar, Stack Exchange and pages read by hand). Not searched: OpenAlex and the free
-text of Semantic Scholar (HTTP 429), MathSciNet, ScienceDirect and Springer Link. Unread: Reid,
+The other statements were not found in the searches logged on 2026-11-25 and 2026-11-26 (arXiv, OEIS,
+CORE, zbMATH Open, OpenAlex with the works citing Stewart and Wormstein, Winslow and Reid, Google
+Scholar, Stack Exchange, GitHub and pages read by hand). Not searched: the free text of Semantic
+Scholar (HTTP 429), the full text of CORE (titles and abstracts only), MathSciNet, ScienceDirect and
+Springer Link. Unread: Reid,
 "Many L-Shaped Polyominoes Have Odd Rectangular Packings" (2014) `[to check]`; Jepsen, Vaughn
 and Brantley, "Orders of L-shaped Polyominoes" (2003-2004) `[to check]`; Yuan, Zamfirescu and
 Zamfirescu, "Dissecting the square into five congruent parts" (2016) `[to check]`; Golomb,

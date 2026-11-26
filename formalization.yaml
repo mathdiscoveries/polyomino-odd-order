@@ -91,6 +91,63 @@ sources:
     note: >-
       Chapter 4 read. Page 96 says it is not known whether there are polyominoes
       of order 5.
+  - title: "No polyomino with at most 24 cells tiles a rectangle with exactly 5, 7 or 9 copies"
+    authors:
+      - "fransys-code (GitHub account)"
+    id: "https://github.com/fransys-code/polyomino-odd-rectangles"
+    type: other
+    location: "GitHub repository, created 2026-11-22"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      README read. An exhaustive computer search: no non-rectangular polyomino
+      with at most 24 cells tiles a rectangle with exactly 5, 7 or 9 copies (its
+      French summary says that size 24 is still running). It calls the general
+      question open and says the search has not been checked by a third party.
+  - title: "Comment on MathOverflow question 11753, Cutting a rectangle into an odd number of congruent non-rectangular pieces"
+    authors:
+      - "Zomulgustar (MathOverflow user)"
+    id: "https://mathoverflow.net/questions/11753#comment587390_12239"
+    type: web discussion
+    location: "MathOverflow, comment of 2016-04-27 on an answer"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      Read in full. An exhaustive search of the non-rectangular polyominoes with
+      at most 13 cells found no rectangle tiled by 5, 7 or 9 copies, with "a few
+      13-ominos left".
+  - title: "Dissecting a square into congruent polygons"
+    authors:
+      - "Hui Rao"
+      - "Lei Ren"
+      - "Yang Wang"
+    id: "https://doi.org/10.23638/dmtcs-22-1-21"
+    type: paper
+    location: "Discrete Mathematics & Theoretical Computer Science 22 (2020)"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      Pages 1 and 2 of the arXiv version (2001.03289 v3) read. A square cut into
+      an odd number of congruent convex polygons; it reports that Yuan,
+      Zamfirescu and Zamfirescu (2016) prove that for five tiles the convex
+      polygon is a rectangle, and proves the same for convex q-gons with q >= 6
+      and right-angle trapezoids. A polyomino that is not a rectangle is not
+      convex.
+  - title: "Dissecting the square into seven or nine congruent parts"
+    authors:
+      - "Gerardo L. Maldonado"
+      - "Edgardo Roldán-Pensado"
+    id: "https://doi.org/10.1016/j.disc.2022.112800"
+    type: paper
+    location: "Discrete Mathematics (2022)"
+    relationship: background
+    author_endorsement: not-contacted
+    note: >-
+      Pages 1 and 2 of the arXiv version (2104.04940 v4) read. It reports that
+      Yuan, Zamfirescu and Zamfirescu verified the convex case for five tiles,
+      and that a conjecture attributed to Danzer, for five congruent polygons
+      that need not be convex, remains open. A polyomino that is not a rectangle
+      is not convex.
 
 related_formalizations: []
 
